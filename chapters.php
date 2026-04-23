@@ -26,4 +26,18 @@ return [
         'hero_dates'     => '23. dubna 2026 &middot; Praha 3, Pod Kapličkou',
     ],
 
+    'taiko' => [
+        'layout'         => 'chapter',
+        'chapter_label'  => '23. dubna 2026',
+        'title'          => 'Taiko &mdash; ramen na Žižkově',
+        'description'    => 'Sušené květiny, dva rameny a poučení, že z misky se pije.',
+        'og_title'       => 'Taiko — ramen na Žižkově',
+        'og_description' => 'Sušené květiny, dva rameny a poučení, že z misky se pije.',
+        'og_url'         => 'https://holly382.github.io/denik/taiko.html',
+        'og_type'        => 'article',
+        'hero_h1'        => 'Taiko',
+        'hero_subtitle'  => 'Ramen na Žižkově',
+        'hero_dates'     => '23. dubna 2026 &middot; Husitská 63, Praha 3',
+    ],
+
 ];
