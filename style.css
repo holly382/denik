@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.8;
+    color: #333;
+    background: #fafafa;
+}
+
+.hero {
+    position: relative;
+    height: 50vh;
+    min-height: 300px;
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 50%, #333 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(ellipse at 50% 20%, rgba(229, 170, 80, 0.12) 0%, transparent 60%);
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.hero .dates {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    opacity: 0.5;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.day { margin-bottom: 4rem; }
+
+.entry { margin-bottom: 2rem; }
+
+.time-block {
+    display: inline-block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #8a6d3b;
+    background: rgba(138, 109, 59, 0.08);
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+}
+
+.entry p {
+    font-size: 1.05rem;
+    margin: 0.5rem 0;
+    color: #444;
+}
+
+figure { margin: 1.5rem 0; }
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    font-size: 0.85rem;
+    color: #888;
+    font-style: italic;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.intro { background: #fff; border-bottom: 1px solid #eee; }
+
+.intro-content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.intro h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #8a6d3b;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.intro a {
+    color: #8a6d3b;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.info-box {
+    margin: 1.5rem 0;
+    padding: 1.2rem 1.5rem;
+    background: linear-gradient(135deg, #f7f4ef 0%, #f0ece4 100%);
+    border-left: 3px solid #8a6d3b;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.7;
+}
+
+.info-box .info-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #8a6d3b;
+    margin-bottom: 0.5rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.info-box p { margin: 0.4rem 0; font-size: 0.95rem; }
+
+.days-index { background: #fafafa; }
+
+.days-index-content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.days-index h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #8a6d3b;
+    margin-bottom: 1.5rem;
+}
+
+.day-card {
+    display: flex;
+    gap: 1.2rem;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.day-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+}
+
+.day-card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.day-card-num {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #8a6d3b;
+    margin-bottom: 0.2rem;
+}
+
+.day-card-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 0.3rem;
+}
+
+.day-card-date {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.day-card-teaser {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.top-nav {
+    background: #2d2d2d;
+    padding: 0.8rem 1.5rem;
+}
+
+.top-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+}
+
+.top-nav a:hover { text-decoration: underline; }
+
+.hero-day {
+    height: auto;
+    min-height: 0;
+    padding: 3rem 1.5rem;
+}
+
+.hero-day h1 { font-size: 2.2rem; }
+
+.day-nav {
+    max-width: 720px;
+    margin: 3rem auto 0;
+    padding: 2rem 1.5rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.day-nav a, .day-nav span {
+    font-size: 0.95rem;
+    color: #8a6d3b;
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+}
+
+.day-nav a:hover { text-decoration: underline; }
+.day-nav .disabled { color: #ccc; cursor: default; }
+
+footer {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #aaa;
+    font-size: 0.85rem;
+    border-top: 1px solid #eee;
+}
+
+.footer-main { margin-bottom: 0.5rem; }
+.footer-sub { font-size: 0.8rem; color: #bbb; }
+
+@media (max-width: 600px) {
+    .hero { height: 40vh; min-height: 220px; }
+    .hero h1 { font-size: 2rem; }
+    main { padding: 1.5rem 1rem; }
+    .hero-day h1 { font-size: 1.6rem; }
+}
