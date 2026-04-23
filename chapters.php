@@ -29,15 +29,15 @@ return [
     'taiko' => [
         'layout'         => 'chapter',
         'chapter_label'  => '23. dubna 2026',
-        'title'          => 'Taiko &mdash; ramen na Žižkově',
-        'description'    => 'Sušené květiny, dva rameny a poučení, že z misky se pije.',
-        'og_title'       => 'Taiko — ramen na Žižkově',
-        'og_description' => 'Sušené květiny, dva rameny a poučení, že z misky se pije.',
+        'title'          => 'Ramen taste test &mdash; Taiko vs Miska',
+        'description'    => 'Dva rameny za jedno odpoledne. Žižkov vs Vinohrady.',
+        'og_title'       => 'Ramen taste test — Taiko vs Miska',
+        'og_description' => 'Dva rameny za jedno odpoledne. Žižkov vs Vinohrady.',
         'og_url'         => 'https://holly382.github.io/denik/taiko.html',
         'og_type'        => 'article',
-        'hero_h1'        => 'Taiko',
-        'hero_subtitle'  => 'Ramen na Žižkově',
-        'hero_dates'     => '23. dubna 2026 &middot; Husitská 63, Praha 3',
+        'hero_h1'        => 'Ramen taste test',
+        'hero_subtitle'  => 'Taiko vs Miska &mdash; Žižkov vs Vinohrady',
+        'hero_dates'     => '23. dubna 2026 &middot; Praha',
     ],
 
 ];
